@@ -18,7 +18,7 @@ jobs:
       - name: Creating docker image and pushing
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./src
           push: true
           file: ./src/Dockerfile
           tags: |
